@@ -1,0 +1,11 @@
+body, html {
+    height: 100%;
+  }
+body{
+  background-image: url("bg_5_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  overflow-x: hidden;
+}

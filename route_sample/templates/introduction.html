@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task Tracker</title>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/background.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <style media="screen">
+      body{
+            color: white;
+            margin: 35px;
+      }
+
+      h2{
+        line-height: 4;
+      }
+
+      p{
+        font-size: large;
+      }
+
+      #imgBorder{
+        border: 10px solid;
+        border-radius: 25px;
+      }
+    </style>
+    <body>
+        <!--<br><br><br>-->
+        <div class="container">
+          <div class="row">
+              <div class="col-8">
+                <h2>Welcome to Task Tracker!</h2>
+              </div>
+              <div class="col-4">
+                <!--<img id="imgBorder" src="/static/icon.png" alt="icon" width="300" height="300"> -->
+                <img id="imgBorder" src="{{url_for('static', filename='styles/icon.png')}}" alt="icon" width="300" height="300">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-8">
+                <h4 >Get Started!</h4>
+              </div>
+              <div class="col-4">
+                <br><br>
+                <button type="button" name="button" class="btn btn-warning" onclick="window.location.href = 'login.html';">Login</button><br><br>
+                <p>New User?</p><br>
+                <button type="button" name="button" class="btn btn-warning" onclick="window.location.href = 'newUser.html';">Register Here!</button>
+              </div>
+          </div>
+        </div>
+    </body>
+</html>
